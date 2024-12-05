@@ -40,6 +40,9 @@
     .hide-on-tablet {
         display: none;
     }
+    .app__content  {
+        padding-top: 560px;
+    }
 }
     
 
@@ -48,5 +51,58 @@
 
     .hide-on-mobile {
         display: none;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    .header__cart {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    .header__logo  {
+        
+    }
+    .header__search-mobile:checked ~ .header__search {
+        display: flex;
+    }
+
+    .header__search {
+        position: fixed;
+        display: none;
+        top: 65px;
+        left: 0;
+        right: 0;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0,0 , 0.05);
+        z-index: 1;
+        padding: 0 16px;
+        animation: mobileSearch linear 0.4s;
+    }
+    .header__search-history {
+        position: fixed;
+        width: 100%;
+        top: 125px;
+    }
+    @keyframes mobileSearch {
+        from {
+            top: calc(65px / 2);
+            opacity: 0;
+        }
+        to {
+            top: 70px;
+            opacity: 1;
+        }
+    }
+ 
+    .slideshow__fade {
+        width: 80%;
+        max-width: 300px;
+        height: 200px;
+        margin: 12px;
+    }
+    .app__content  {
+        padding-top: 200px;
     }
 }
