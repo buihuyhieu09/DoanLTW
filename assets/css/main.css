@@ -572,13 +572,13 @@
 .header__cart-list-item {
     padding-left: 0;
     list-style: none;
-    height: 56vh;
+    max-height: 56vh;
     overflow-y: auto;
 }
-.header__cart-item {
+.header__cart-item ul {
     display: flex;
     align-items: center;
-    margin-top: 6px;
+    
 }
 
 .header__cart-item:hover {
@@ -588,7 +588,7 @@
 .header__cart-item-img {
     width: 48px;
     height: 40px;
-    margin: 0 -24px;
+    margin: -50px -24px;
     border: 1px solid #E8E8E8;
 }
 
@@ -623,6 +623,7 @@
 .header__cart-item-price-wrap {
     width: 120px;
     margin-left: 30px;
+    padding-right: 44px;
 }
 
 .header__cart-item-price {
@@ -644,7 +645,7 @@
 }
 
 .header__cart-item-body {
-    margin-top: 8px; 
+    margin-top: 4px; 
     margin-left: 50px;
     display: flex;
     justify-content: space-between; 
