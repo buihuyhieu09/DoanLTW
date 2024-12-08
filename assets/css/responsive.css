@@ -46,6 +46,9 @@
     .app__content  {
         padding-top: 560px;
     }
+    .mobile-category {
+        display: block;
+    }
 }
     
 
@@ -88,6 +91,21 @@
         width: 100%;
         top: 125px;
     }
+    .mobile-category {
+        display: block;
+    }
+    .pagination-item {
+        margin: 0;
+    }
+    .pagination-item__link {
+        --height: 28px;
+        min-width: 36px;
+        font-size: 1.6rem;
+    }
+
+    .app__container {
+        margin: 0 4px;
+    }
     @keyframes mobileSearch {
         from {
             top: calc(65px / 2);
@@ -108,4 +126,8 @@
     .app__content  {
         padding-top: 200px;
     }
+    .header__mobile-search {
+        display: block;
+    }
+
 }
