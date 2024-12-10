@@ -35,6 +35,9 @@
     .mobile-category__item--active {
         background-color: var(--primary-color);
     }
+    .mobile-category__link--active {
+        color: var(--white-color);
+    }
 }
 
 /* Tablet */
