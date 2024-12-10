@@ -32,6 +32,9 @@
         width: 70px;
         margin-top: -25px;
     }
+    .mobile-category__item--active {
+        background-color: var(--primary-color);
+    }
 }
 
 /* Tablet */
