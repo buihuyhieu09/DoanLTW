@@ -1411,3 +1411,43 @@ margin-left: auto;
     font-size: 1.4rem;
     color: #737373;
 }
+
+.info {
+    margin: 35px;
+}
+
+.info-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.info-title__paragraph {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding-top: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    margin: 5px;
+    display: block;
+    padding: 10px;
+}
+
+.searchinfo {
+    weight: 1200px;
+    height: 260px;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.info-title__search {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.searchinfo__checkbox {
+    padding-left: 60px;
+}
