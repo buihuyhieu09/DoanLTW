@@ -23,6 +23,25 @@ html {
     box-sizing: border-box;
 }
 
+.app__content-page {
+    margin-top: 20px;  
+    background-color: #F5F5F5; 
+}
+
+.mobile-category__list-index {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.mobile-category__list-index::-webkit-scrollbar {
+    display: none;
+}
+
 /* Responsive */
 .grid {
     width: 1480px;

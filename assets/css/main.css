@@ -903,8 +903,9 @@
 }
 
 .app__content {
-    padding-top: 590px;
+    margin-top: 580px;
 }
+
 .category {
     background-color: var(--white-color);
     border-radius: 2px;
@@ -1010,7 +1011,6 @@
     list-style: none;
     max-width: 100%;
     overflow-x: auto;
-    margin-top: 46px;
     text-align: center;
     justify-content: center;
 }
