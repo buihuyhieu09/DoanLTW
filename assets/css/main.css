@@ -974,8 +974,9 @@
     overflow: hidden;
     border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
 }
+
+
 
   /* Chuyển động giữa các slide */
 .slideshow__fade {
