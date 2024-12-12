@@ -52,6 +52,9 @@
     .hide-on-tablet {
         display: none;
     }
+    .header__cart {
+        margin-top: 7px;
+    }
     .app__content  {
         padding-top: 15px;
     }
@@ -92,6 +95,7 @@
     }
     .header__cart {
         width: 100px;
+        margin-top: 4px;
     }
     .header__logo  {
         margin-left: 50px;
