@@ -53,7 +53,7 @@
         display: none;
     }
     .app__content  {
-        padding-top: 10px;
+        padding-top: 15px;
     }
     .mobile-category {
         display: block;
@@ -63,7 +63,7 @@
         padding: 8px 30px 0 30px;
     }
     .mobile-category__list {
-        margin-top: 40px;
+        margin-top: 0px;
         /* padding-top: 40px; */
     }
     .slideshow__fade {
