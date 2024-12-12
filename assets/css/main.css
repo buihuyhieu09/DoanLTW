@@ -903,7 +903,7 @@
 }
 
 .app__content {
-    margin-top: 580px;
+    margin-top: 700px;
 }
 
 .category {
@@ -967,10 +967,10 @@
 
 .slideshow__fade {
     position: relative;
-    width: 80%;
-    max-width: 900px;
-    height: 500px;
-    margin: 40px 30px;
+    width: 100%;
+    max-width: 1140px;
+    height: 620px;
+    margin: 40px 60px;
     overflow: hidden;
     border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
