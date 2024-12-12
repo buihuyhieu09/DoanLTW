@@ -55,8 +55,9 @@
     .header__cart {
         margin-top: 7px;
     }
-    .app__content  {
-        padding-top: 15px;
+
+    .app__container {
+        padding-top: 6px;
     }
     .app__container-table {
         margin-top: -126px;
@@ -70,7 +71,7 @@
         padding: 8px 30px 0 30px;
     }
     .mobile-category__list {
-        margin-top: 0px;
+        margin-top: 40px;
         /* padding-top: 40px; */
     }
     .slideshow__fade {
