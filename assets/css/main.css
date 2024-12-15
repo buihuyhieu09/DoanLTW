@@ -343,9 +343,25 @@
 
 .auth-form {
     width: 500px;
+    max-width: 490px;
     border-radius: 5px;
     background-color: var(--white-color);
     overflow: hidden;
+}
+
+.auth-form__close {
+    position: absolute;
+    font-size: 1.2rem;
+    top: -4px;
+    right: 2px;
+    padding: 8px;
+    color: var(--black-color);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.auth-form__close:hover {
+    opacity: 1;
 }
 
 .auth-form__container {
