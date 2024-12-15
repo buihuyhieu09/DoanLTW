@@ -92,7 +92,7 @@
 
     .header-with-search {
         justify-content: space-between;
-        margin-left: 20px;
+        margin-left: 6px;
     }
     .header__cart {
         width: 100px;
