@@ -3,26 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone 16 Pro Max 256GB</title>
+    <title>iPhone 16 Pro Max 512GB</title>
     <link rel="stylesheet" href="./assets/css/sanpham.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div class="grid wide">
         <div class="row">
-            <div class="col l-5 m-6 c-12">
-                <div class="image">
-                    <img class="image-img" src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png" alt="">
+            <div class="col l-5 m-12 c-12">
+                <div class="image-product">
+                    <img class="image-product__img" src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png" alt="">
                 </div>
             </div>
-            <div class="col l-5 m-6 c-12">
+            <div class="col l-7 m-12 c-12">
                 <div class="info">
-                    <div class="info-header">
-                        <h1 class="info-header__title">iPhone 16 Pro Max 256GB | Chính hãng VN/A</h1>
+                    <div class="info-container">
+                        <h1 class="info-container__title">iPhone 16 Pro Max 512GB | Chính hãng VN/A</h1>
+                        <span class="info-container__rating">
+                            <i class="info-container__rating-icon fa-solid fa-star"></i> 4.9
+                        </span>
+                        <span class="info-container__rating-vote">170 Đánh Giá</span>
+                        <span class="info-container__rating-sold">208 Đã Bán</span>
                     </div>
+                    <div class="info-container__price">
+                        <span class="info-container__price-new">₫34.090.000</span>
+                        <span class="info-container__price-old">₫39.900.000</span>
+                    </div>
+                    <div class="info-container__btn">
+                        <button class="info-container__btn-sale">Giảm ₫500k</button>
+                        <button class="info-container__btn-sale">Giảm ₫300k</button>
+                        <span class="info-container__deal">Mua kèm deal sốc</span>
+                    </div>
+
+                    <div class="info-container__installment">
+                        <span class="info-container__installment-istm">0% TRẢ GÓP</span>
+                        <span class="info-container__installment-container">
+                            12 tháng x ₫2.832.500 (Lãi suất 0%)
+                        </span>
+                    </div>
+                    <div class="info-container__shipping">
+                        <span class="info-container__shipping-title">
+                            <i class="info-container__shipping-icon fa-solid fa-truck"></i>
+                            Nhận từ 18 Th12 - 20 Th12, phí giao 0đ
+                        </span>
+                            <p class="info-container__shipping-text">
+                            Tặng Voucher ₫15.000 nếu đơn giao sau thời gian trên.</p>
+                    </div>
+
+                <div class="info-container__classify">
+                    <h3 class="info-container__classify-title">Phân Loại</h3>
+                    <div class="info-container__classify-btn">
+                        <button class="info-container__classify-btn-color">Titan - Đen</button>
+                        <button class="info-container__classify-btn-color">Titan - Trắng</button>
+                        <button class="info-container__classify-btn-color">Titan - Sa Mạc</button>
+                        <button class="info-container__classify-btn-color">Titan - Tự Nhiên</button>
+                </div>
+                </div>
+
+                <div class="info-container__quantity">
+                    <h3 class="info-container__quantity-title">Số Lượng</h3>
+                    <button class="info-container__quantity-btn" id="decrease">-</button>
+                    <input type="number" id="info-container__quantity-input" value="1" min="1">
+                    <button class="info-container__quantity-btn" id="increase">+</button>
+                    <span class="info-container__quantity__if">23 sản phẩm có sẵn</span>
+                </div>
+
+                <div class="info-container__card">
+                    <button class="info-container__btn-addcard">Thêm Vào Giỏ Hàng</button>
+                    <button class="info-container__cat-buynow">Đặt Hàng Ngay</button>
                 </div>
             </div>
         </div>
-    </div>            
+    </div> 
+    <script>
+        const decreaseBtn = document.getElementById("decrease");
+        const increaseBtn = document.getElementById("increase");
+        const quantityInput = document.getElementById("info-container__quantity-input");
+
+        decreaseBtn.addEventListener("click", () => {
+            if (quantityInput.value > 1) {
+                quantityInput.value--;
+            }
+        });
+
+        increaseBtn.addEventListener("click", () => {
+            quantityInput.value++;
+        });
+
+    </script>           
 </body>
 </html>

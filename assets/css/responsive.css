@@ -80,6 +80,12 @@
         height: 460px;
         margin: 100px 30px;
     }
+    .image-product {
+        margin-left: 160px;
+    }
+    .info {
+        margin-left: 100px;
+    }
 }
     
 
@@ -115,7 +121,6 @@
     .header__search-mobile:checked ~ .header__search {
         display: flex;
     }
-
     .header__search {
         position: fixed;
         display: none;
@@ -176,5 +181,20 @@
     .header__mobile-search {
         display: block;
     }
-
+    .image-product {
+        width: 300px;
+        margin-left: 30px;
+    }
+    .image-product__img {
+        max-width: 200px;
+        height: 200px;
+        margin-left: 35px;
+    }
+    .info {
+        max-width: 360px;
+        margin-left: 4px;
+    }
+    .info-container__price {
+        max-width: 300px;
+    }
 }
