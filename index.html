@@ -94,7 +94,7 @@
                                 Trợ giúp
                             </a>
                         </li> 
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-register">
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
                             Đăng kí
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong js-login">
@@ -876,7 +876,7 @@
         <div class="modal__body">
             
             <!-- Register form -->
-            <div class="auth-form">
+            <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__close js-auth-form__close">
                         <i class="fa-solid fa-xmark"></i>
@@ -923,11 +923,11 @@
                         </span>
                     </a>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Login form -->
-            <!-- <div class="auth-form">
-                    <div class="auth-form__container">
+            <div class="auth-form">
+                    <div class="auth-form__container js-auth-form__container js-modal">
                         <div class="auth-form__close js-auth-form__close">
                             <i class="fa-solid fa-xmark"></i>
                         </div>
@@ -973,11 +973,12 @@
                     </div>
                 </div>
             </div>
-        </div>  -->
+        </div> 
        
         <script>
             const loginDn = document.querySelector('.js-login')
-            const loginDk = document.querySelector('.js-register')
+            // const loginDk = document.querySelector('.js-register')
+            const modalContainer = document.querySelector('.js-auth-form__container')
             const modal = document.querySelector('.js-modal')
             const modalClose = document.querySelector('.js-auth-form__close')
 
@@ -990,18 +991,22 @@
                 modal.classList.remove('open')
             }
 
-            function showFormRegister() {
-                modal.classList.add('open')
-            }
-            function hideFormRegister() {
-                modal.classList.remove('open')
-            }
+            // function showFormRegister() {
+            //     modal.classList.add('open')
+            // }
+            // function hideFormRegister() {
+            //     modal.classList.remove('open')
+            // }
+
             // click vao de show
             loginDn.addEventListener('click', showFormLogin)
-            loginDk.addEventListener('click', showFormRegister)
             // click vao de dong
             modalClose.addEventListener('click', hideFormLogin)
-            modalClose.addEventListener('click', hideFormRegister)
+
+            modal.addEventListener('click', hideFormLogin)
+            modalContainer.addEventListener('click', function(event) {
+                event.stopImmediatePropagation ()
+            })
 
         </script>
         

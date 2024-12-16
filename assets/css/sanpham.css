@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.product-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.rating span {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.discounted-price {
+    color: red;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
+
+.promotion button {
+    background-color: #ffe5e5;
+    color: red;
+    border: 1px solid #ffaaaa;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-options h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.option-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity label {
+    margin-right: 10px;
+}
+
+.quantity input {
+    width: 50px;
+    padding: 5px;
+}
+
+.purchase-buttons {
+    margin-top: 20px;
+}
+
+.purchase-buttons .add-to-cart,
+.purchase-buttons .buy-now {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.purchase-buttons .add-to-cart {
+    background-color: #ffb74d;
+}
+
+.purchase-buttons .buy-now {
+    background-color: red;
+}

@@ -102,6 +102,14 @@
         margin-left: 50px;
         margin-bottom: 3px;
     }
+    .header__logo--big-text {
+        font-size: 3.4rem;
+    }
+    .header_logo--small {
+        font-size: 1rem;
+        margin-top: -26px;
+
+    }
     .header__search-mobile:checked ~ .header__search {
         display: flex;
     }
