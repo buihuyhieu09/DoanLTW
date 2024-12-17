@@ -81,10 +81,15 @@
         margin: 100px 30px;
     }
     .image-product {
-        margin-left: 160px;
+        max-width: 600px;
+        margin-left: 156px;
+    }
+    .image-product__img {
+        margin-left: 142px;
     }
     .info {
-        margin-left: 100px;
+        max-width: 800px;
+        margin-left: 50px;
     }
 }
     
@@ -156,7 +161,6 @@
     .app__container {
         margin: 0 4px;
     }
-
     .app__content {
         margin-top: 340px;
     }
@@ -183,7 +187,7 @@
     }
     .image-product {
         width: 300px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
     .image-product__img {
         max-width: 200px;
@@ -192,7 +196,7 @@
     }
     .info {
         max-width: 360px;
-        margin-left: 4px;
+        margin-left: 20px;
     }
     .info-container__price {
         max-width: 300px;
@@ -251,5 +255,16 @@
         max-width: 1000px;
         height: 520px;
         margin: 88px 30px;
+    }
+    .image-product {
+        max-width: 640px;
+        margin-left: 180px;
+    }
+    .image-product__img {
+        margin-left: 142px;
+    }
+    .info {
+        max-width: 900px;
+        margin-left: 60px;
     }
 }
