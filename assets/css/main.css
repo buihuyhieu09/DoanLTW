@@ -994,12 +994,10 @@
 }
 
 
-
-  /* Chuyển động giữa các slide */
 .slideshow__fade {
     position: absolute;
-    opacity: 0; /* Ban đầu ảnh bị ẩn */
-    animation: slide-animation 25s infinite; /* Hiệu ứng vòng lặp vô tận */
+    opacity: 0;
+    animation: slide-animation 25s infinite; 
 }
 /* Hiệu ứng cho từng ảnh */
 .slideshow__fade:nth-child(1) {
