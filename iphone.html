@@ -96,7 +96,7 @@
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
                             Đăng kí
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong">
+                        <li class="header__navbar-item header__navbar-item--strong js-login">
                             Đăng nhập
                         </li>
 
@@ -853,5 +853,145 @@
             </div>
     </footer>
     </div>
+    
+    <!-- Modal layout -->
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>    
+        <div class="modal__body">
+            
+            <!-- Register form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__close js-auth-form__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>    
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng ký, bạn đã đồng ý với chúng tôi về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a> 
+                        </p>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÍ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                        <span class="auth-form__socials-title">
+                            Đăng nhập bằng Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Đăng nhập bằng Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- Login form -->
+            <div class="auth-form">
+                    <div class="auth-form__container js-auth-form__container js-modal">
+                        <div class="auth-form__close js-auth-form__close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng kí</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                            </div>   
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                <span class="auth-form__help-sparate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>   
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-title">
+                                Tiếp tục với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Tiếp tục với Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+       
+        <script>
+            const loginDn = document.querySelector('.js-login')
+            // const loginDk = document.querySelector('.js-register')
+            const modalContainer = document.querySelector('.js-auth-form__container')
+            const modal = document.querySelector('.js-modal')
+            const modalClose = document.querySelector('.js-auth-form__close')
+
+            // Ham hien thi form dang nhap
+            function showFormLogin() {
+                modal.classList.add('open')
+            }
+            // Ham dong form dang nhap
+            function hideFormLogin() {
+                modal.classList.remove('open')
+            }
+
+            // function showFormRegister() {
+            //     modal.classList.add('open')
+            // }
+            // function hideFormRegister() {
+            //     modal.classList.remove('open')
+            // }
+
+            // click vao de show
+            loginDn.addEventListener('click', showFormLogin)
+            // click vao de dong
+            modalClose.addEventListener('click', hideFormLogin)
+
+            modal.addEventListener('click', hideFormLogin)
+            modalContainer.addEventListener('click', function(event) {
+                event.stopImmediatePropagation ()
+            })
+
+        </script>
 </body>
 </html>

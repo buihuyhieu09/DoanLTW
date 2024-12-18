@@ -164,6 +164,7 @@
     .app__content {
         margin-top: 340px;
     }
+    
     @keyframes mobileSearch {
         from {
             top: calc(65px / 2);
@@ -204,7 +205,7 @@
 }
 
 /* mobile small screen */
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .header__logo {
         margin-top: 6px;
     }
