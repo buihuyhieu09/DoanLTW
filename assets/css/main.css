@@ -987,8 +987,8 @@ ul {
 
 .slideshow__fade {
     position: relative;
-    width: 100%;
-    max-width: 1140px;
+    width: 92%;
+    /* max-width: 1140px; */
     height: 620px;
     margin: 40px 60px;
     overflow: hidden;
