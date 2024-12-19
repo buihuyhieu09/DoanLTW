@@ -609,7 +609,10 @@
 .header__cart-item ul {
     display: flex;
     align-items: center;
-    
+}
+
+ul {
+    list-style-type: none;
 }
 
 .header__cart-item:hover {
