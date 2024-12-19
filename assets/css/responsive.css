@@ -75,10 +75,10 @@
         /* padding-top: 40px; */
     }
     .slideshow__fade {
-        width: 93%;
-        max-width: 900px;
+        width: 96%;
+        /* max-width: 900px; */
         height: 460px;
-        margin: 100px 30px;
+        margin: 100px 20px;
     }
     .image-product {
         max-width: 600px;
